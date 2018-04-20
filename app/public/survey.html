@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> 
+
+
+</head>
+
+<body>
+
+    <div class="container">
+            <h1>Survey Questions</h1>
+            
+            <h2>About You</h2>
+
+            <h3>Name (Required)</h3>
+            <input type="text" class="form-control" id="inputName">
+
+            <h3>Link to photo image (Required)</h3>
+            <input type="text" class="form-control" id="inputLink">
+                        
+            <h3>Questions:</h3>
+            
+            <h4><b>Q1) Trump deserved to be a president.</b></h4>
+            <select id="q1">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+                       
+            <h4><b>Q2) War with North Korea.</b></h4>                      
+            <select id="q2">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q3) The City should assist corporations to expand to create jobs.</b></h4>                      
+            <select id="q3">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q4) The creation of jobs is more important than business tax revenue.</b></h4>                      
+            <select id="q4">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q5)  Reading fiction is more enjoyable than watching movies.</b></h4>                      
+            <select id="q5">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q6) Increase the drinking age to 25.</b></h4>                      
+            <select id="q6">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q7) Only people who earn a lot of money are successful.</b></h4>                      
+            <select id="q7">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q8) Children should be required to help with household tasks as soon as they are 10.</b></h4>                      
+            <select id="q8">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q9) Playing a game is fun only when you win.</b></h4>                      
+            <select id="q9">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+            
+            <h4><b>Q10) The decisions that people make quickly are always wrong.</b></h4>                      
+            <select id="q10">                   
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+
+    </div>
+    
+    <div class="container">
+        <br>
+        <button id ="submit">Submit</button> 
+            
+        <footer class="footer">         
+        <br>               
+            <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>               
+        </footer>
+
+        <p>Hello</p>
+
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">          
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close reset" data-dismiss="modal">&times;</button>
+                      <h2 class="modal-title">Best Match</h2>
+                    </div>
+                    <div class="modal-body">
+                      <h2 id="matchname"></h2>
+                      <img id="matchpic" src="" alt="" style="height: auto; max-width: 100%">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default reset" data-dismiss="modal">Close</button>
+                    </div>
+                </div>          
+            </div>
+        </div>
+
+        <p>Hello</p>
+       
+    </div>
+    
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+            
+        var newFriend = {
+            name: $("#inputName").val().trim(),
+            image: $("#inputLink").val().trim(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+            ]
+        };        
+        // console.log("New Friend: " + JSON.stringify(newFriend));
+        
+
+        $("#inputName").val("");
+        $("#inputLink").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+        
+        $.post("/api/friends", newFriend, function(data) {
+
+            $("#matchname").text(data.name);
+            $("#matchpic").attr("src", data.photo);
+
+            $("#resultsModal").modal("toggle");
+        });
+
+    });
+
+</script>
