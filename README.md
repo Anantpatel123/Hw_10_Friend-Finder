@@ -36,3 +36,5 @@
 
     Friend Finder is deployed to Heroku.
     <a href="https://lit-atoll-92571.herokuapp.com/home">Heroku Link</a>
+
+    [Heroku](https://lit-atoll-92571.herokuapp.com/home)
