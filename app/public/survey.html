@@ -141,9 +141,7 @@
         <br>               
             <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>               
         </footer>
-
-        <p>Hello</p>
-
+        
         <div id="resultsModal" class="modal fade" role="dialog">
             <div class="modal-dialog">          
                 <div class="modal-content">
@@ -161,9 +159,7 @@
                 </div>          
             </div>
         </div>
-
-        <p>Hello</p>
-       
+              
     </div>
     
 
@@ -178,7 +174,7 @@
             
         var newFriend = {
             name: $("#inputName").val().trim(),
-            image: $("#inputLink").val().trim(),
+            photo: $("#inputLink").val().trim(),
             scores: [
                 $("#q1").val(),
                 $("#q2").val(),
@@ -192,7 +188,8 @@
                 $("#q10").val()
             ]
         };        
-        // console.log("New Friend: " + JSON.stringify(newFriend));
+        console.log("New Friend: " + JSON.stringify(newFriend));
+        // console.log(newFriend);
         
 
         $("#inputName").val("");
