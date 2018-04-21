@@ -6,6 +6,8 @@
 
     * Used Express to handle routing. 
     * Used basic npm packages: express, body-parser, and path.
+    * localhost:8080/home --> will show home page.
+    * localhost:8080/survey --> will show survey page with 10 questions.
 
 ### Description:
 
