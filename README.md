@@ -36,5 +36,3 @@
 
     Friend Finder is deployed to Heroku.
     [click here] (https://lit-atoll-92571.herokuapp.com/home)
-
-    
