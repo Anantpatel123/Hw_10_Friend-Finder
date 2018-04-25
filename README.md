@@ -35,6 +35,6 @@
         * The modal should display both the name and picture of the closest match.
 
     Friend Finder is deployed to Heroku.
-    <a href ="https://lit-atoll-92571.herokuapp.com/home">Heroku Link</a>
+    (https://lit-atoll-92571.herokuapp.com/home)
 
     
